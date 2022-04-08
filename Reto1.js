@@ -12,7 +12,7 @@ let L = Number(prompt("Ingrese Cantidad de litros que produce"));
 let TG = 0;
 let GA = 0;
 
-TG = L / 3.785;
+TG = Math.ceil(L / 3.785); // los galones no pueden ser decimales, se redondea al maximo entero
 GA = TG * PG ;
 
 console.log(`La ganancia por la entrega de leche diaria es: ${GA}`);
